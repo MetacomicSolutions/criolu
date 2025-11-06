@@ -1,7 +1,7 @@
 {
   "name": "Somos.CV",
   "short_name": "Somos",
-  "start_url": "http://167.172.235.74",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
