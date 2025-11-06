@@ -1,7 +1,7 @@
 {
   "name": "Somos.CV",
   "short_name": "Somos",
-  "start_url": "/",
+  "start_url": "https://metacomicsolutions.github.io/criolu/index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
