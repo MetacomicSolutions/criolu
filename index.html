@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- PWA Manifest -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#121212">
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121212">
+  <meta name="background-color" content="#121212">
 
-<!-- Universal Icons (all reference the same file) -->
-<link rel="apple-touch-icon" sizes="57x57" href="icon.png">
-<link rel="apple-touch-icon" sizes="60x60" href="icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="icon.png">
-<link rel="apple-touch-icon" sizes="76x76" href="icon.png">
-<link rel="apple-touch-icon" sizes="114x114" href="icon.png">
-<link rel="apple-touch-icon" sizes="120x120" href="icon.png">
-<link rel="apple-touch-icon" sizes="144x144" href="icon.png">
-<link rel="apple-touch-icon" sizes="152x152" href="icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <!-- Universal Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+  <meta name="msapplication-TileColor" content="#121212">
+  <meta name="msapplication-TileImage" content="icon.png">
 
-<link rel="icon" type="image/png" sizes="192x192" href="icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icon.png">
-<link rel="icon" type="image/png" sizes="96x96" href="icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+  <!-- SEO -->
+  <meta name="description" content="Somos.CV — A social platform for Cape Verde.">
+  <title>Somos.CV</title>
 
-<meta name="msapplication-TileColor" content="#121212">
-<meta name="msapplication-TileImage" content="icon.png">
-
-<title>Somos.CV</title>
-
-    <style>
-        body {
-            margin: 0;
-            background-color: #121212;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-    </style>
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-<a href="http://167.172.235.74"><img src="White-stars.png" alt=""></a>
+  <a href="/">
+    <img src="White-stars.png" alt="Somos.CV">
+  </a>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
